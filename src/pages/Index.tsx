@@ -3,6 +3,14 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
+// Import service images
+import customDevelopmentImg from "@/assets/custom-development.jpg";
+import dataAnalyticsImg from "@/assets/data-analytics.jpg";
+import cloudSolutionsImg from "@/assets/cloud-solutions.jpg";
+import mobileAppsImg from "@/assets/mobile-apps.jpg";
+import securitySolutionsImg from "@/assets/security-solutions.jpg";
+import performanceOptimizationImg from "@/assets/performance-optimization.jpg";
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/5 to-accent/5">
@@ -45,13 +53,15 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={customDevelopmentImg} 
+                  alt="Custom Development" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105"
+                />
+              </div>
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                  </svg>
-                </div>
                 <CardTitle>Custom Development</CardTitle>
                 <CardDescription>
                   Tailored software solutions built from the ground up to meet your specific business requirements.
@@ -59,13 +69,15 @@ const Index = () => {
               </CardHeader>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={dataAnalyticsImg} 
+                  alt="Data Analytics" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105"
+                />
+              </div>
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 00-2 2z" />
-                  </svg>
-                </div>
                 <CardTitle>Data Analytics</CardTitle>
                 <CardDescription>
                   Advanced analytics and business intelligence solutions to help you make data-driven decisions.
@@ -73,13 +85,15 @@ const Index = () => {
               </CardHeader>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={cloudSolutionsImg} 
+                  alt="Cloud Solutions" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105"
+                />
+              </div>
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
-                  </svg>
-                </div>
                 <CardTitle>Cloud Solutions</CardTitle>
                 <CardDescription>
                   Scalable cloud infrastructure and migration services to modernize your business operations.
@@ -87,13 +101,15 @@ const Index = () => {
               </CardHeader>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={mobileAppsImg} 
+                  alt="Mobile Apps" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105"
+                />
+              </div>
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                  </svg>
-                </div>
                 <CardTitle>Mobile Apps</CardTitle>
                 <CardDescription>
                   Native and cross-platform mobile applications that deliver exceptional user experiences.
@@ -101,13 +117,15 @@ const Index = () => {
               </CardHeader>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={securitySolutionsImg} 
+                  alt="Security Solutions" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105"
+                />
+              </div>
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
                 <CardTitle>Security Solutions</CardTitle>
                 <CardDescription>
                   Comprehensive cybersecurity services to protect your digital assets and ensure compliance.
@@ -115,13 +133,15 @@ const Index = () => {
               </CardHeader>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={performanceOptimizationImg} 
+                  alt="Performance Optimization" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105"
+                />
+              </div>
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
                 <CardTitle>Performance Optimization</CardTitle>
                 <CardDescription>
                   Optimize your existing systems for better performance, scalability, and user experience.
